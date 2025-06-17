@@ -5,7 +5,7 @@ import {
   createRoot as createRootLng,
 } from '@plextv/react-lightning';
 import { plugin as cssTransformPlugin } from '@plextv/react-lightning-plugin-css-transform';
-import { plugin as flexPlugin } from '@plextv/react-lightning-plugin-flexbox';
+import { plugin as flexPlugin } from '@plextv/react-lightning-plugin-flexbox-lite';
 import { createRoot as createRootDom } from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { keyMap } from './keyMap';

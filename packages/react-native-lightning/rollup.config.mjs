@@ -7,6 +7,6 @@ export default createRollupConfig({
     'react-native-web',
     '@plextv/react-lightning',
     '@plextv/react-lightning-plugin-css-transform',
-    '@plextv/react-lightning-plugin-flexbox',
+    '@plextv/react-lightning-plugin-flexbox-lite',
   ],
 });

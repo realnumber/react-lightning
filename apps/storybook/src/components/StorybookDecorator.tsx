@@ -1,6 +1,6 @@
 import { SdfTrFontFace } from '@lightningjs/renderer';
 import { Canvas, type RenderOptions } from '@plextv/react-lightning';
-import { plugin as flexPlugin } from '@plextv/react-lightning-plugin-flexbox';
+import { plugin as flexPlugin } from '@plextv/react-lightning-plugin-flexbox-lite';
 import { getPlugins } from '@plextv/react-native-lightning';
 import { useMemo } from 'react';
 import { keyMap } from '../../keyMap';

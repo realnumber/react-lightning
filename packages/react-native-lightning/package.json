@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@plextv/react-lightning-plugin-css-transform": "workspace:*",
-    "@plextv/react-lightning-plugin-flexbox": "workspace:*"
+    "@plextv/react-lightning-plugin-flexbox-lite": "workspace:*"
   },
   "devDependencies": {
     "@lightningjs/renderer": "2.13.2",

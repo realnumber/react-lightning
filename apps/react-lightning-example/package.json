@@ -25,7 +25,7 @@
     "@lightningjs/renderer": "2.13.2",
     "@plextv/react-lightning": "workspace:*",
     "@plextv/react-lightning-components": "workspace:*",
-    "@plextv/react-lightning-plugin-flexbox": "workspace:*",
+    "@plextv/react-lightning-plugin-flexbox-lite": "workspace:*",
     "@plextv/react-lightning-plugin-css-transform": "workspace:*",
     "react": "18.3.1",
     "react-dom": "18.3.1",

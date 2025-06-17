@@ -1,7 +1,7 @@
 import { SdfTrFontFace } from '@lightningjs/renderer';
 import { Canvas, type RenderOptions } from '@plextv/react-lightning';
 import { Column, Row } from '@plextv/react-lightning-components';
-import '@plextv/react-lightning-plugin-flexbox/jsx';
+import '@plextv/react-lightning-plugin-flexbox-lite/jsx';
 import type { LinkingOptions } from '@react-navigation/native';
 import {
   DarkTheme,
@@ -9,15 +9,11 @@ import {
   useNavigation,
 } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { AppRegistry, Button } from 'react-native';
+import { AppRegistry } from 'react-native';
 import { ErrorBoundary } from './ErrorBoundary';
 import { keyMap } from './keyMap';
-import { AnimationTest } from './pages/AnimationTest';
-import { ComponentTest } from './pages/ComponentTest';
-import { FlashListTest } from './pages/FlashListTest';
 import { LayoutTest } from './pages/LayoutTest';
-import { LibraryTest } from './pages/LibraryTest';
-import { VirtualizedListTest } from './pages/VirtualizedListTest';
+import React from 'react';
 
 const Stack = createStackNavigator();
 
@@ -44,69 +40,13 @@ const MainApp = () => {
   }>();
 
   return (
-    <Row focusable style={{ clipping: true }}>
-      <Column
-        focusable
-        style={{
-          width: 250,
-          height: 1080,
-          gap: 5,
-          color: 0x000022ff,
-          clipping: true,
-        }}
-      >
-        <Button
-          title="Layout"
-          color={'rgba(55, 55, 22, 1)'}
-          onPress={() => nav.navigate('Layout')}
-        />
-        <Button
-          title="Animation"
-          color={'rgba(55, 55, 22, 1)'}
-          onPress={() => nav.navigate('Animation')}
-        />
-        <Button
-          title="Library"
-          color={'rgba(55, 55, 22, 1)'}
-          onPress={() => nav.navigate('Library')}
-        />
-        <Button
-          title="Components"
-          color={'rgba(55, 55, 22, 1)'}
-          onPress={() => nav.navigate('Components')}
-        />
-        <Button
-          title="VirtualizedList"
-          color={'rgba(55, 55, 22, 1)'}
-          onPress={() => nav.navigate('VirtualizedList')}
-        />
-        <Button
-          title="FlashList"
-          color={'rgba(55, 55, 22, 1)'}
-          onPress={() => nav.navigate('FlashList')}
-        />
-      </Column>
+    <Row focusable>
 
       <Column
         focusable
         style={{ width: 1670, height: 1080, color: 0x000000ff, clipping: true }}
       >
-        <Stack.Navigator
-          initialRouteName="Layout"
-          screenOptions={{
-            headerShown: false,
-          }}
-        >
-          <Stack.Screen name="Layout" component={LayoutTest} />
-          <Stack.Screen name="Animation" component={AnimationTest} />
-          <Stack.Screen name="Library" component={LibraryTest} />
-          <Stack.Screen name="Components" component={ComponentTest} />
-          <Stack.Screen name="FlashList" component={FlashListTest} />
-          <Stack.Screen
-            name="VirtualizedList"
-            component={VirtualizedListTest}
-          />
-        </Stack.Navigator>
+        <LayoutTest />
       </Column>
     </Row>
   );

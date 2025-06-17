@@ -69,7 +69,7 @@
   "devDependencies": {
     "@plextv/react-lightning": "workspace:*",
     "@plextv/react-lightning-components": "workspace:^",
-    "@plextv/react-lightning-plugin-flexbox": "workspace:*",
+    "@plextv/react-lightning-plugin-flexbox-lite": "workspace:*",
     "@repo/rollup-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/react": "18.3.14",
@@ -80,7 +80,7 @@
     "@plextv/react-lightning": "workspace:^",
     "@plextv/react-lightning-components": "workspace:^",
     "@plextv/react-lightning-plugin-css-transform": "workspace:^",
-    "@plextv/react-lightning-plugin-flexbox": "workspace:^",
+    "@plextv/react-lightning-plugin-flexbox-lite": "workspace:^",
     "@plextv/react-native-lightning": "workspace:^",
     "@shopify/flash-list": "1.7.3",
     "react": "^18.3.1",

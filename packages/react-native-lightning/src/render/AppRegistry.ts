@@ -4,7 +4,7 @@ import {
   createRoot,
 } from '@plextv/react-lightning';
 import { plugin as cssPlugin } from '@plextv/react-lightning-plugin-css-transform';
-import { plugin as flexboxPlugin } from '@plextv/react-lightning-plugin-flexbox';
+import flexPlugin from '@plextv/react-lightning-plugin-flexbox-lite';
 import type { ComponentProvider } from 'react-native';
 import { cssClassNameTransformPlugin } from '../plugins/cssClassNameTransformPlugin';
 import { domPolyfillsPlugin } from '../plugins/domPolyfillsPlugin';
@@ -21,9 +21,7 @@ export function getPlugins(extraPlugins?: Plugin[]): Plugin[] {
     reactNativePolyfillsPlugin(),
     cssClassNameTransformPlugin(),
     cssPlugin(),
-    flexboxPlugin({
-      errata: 'all',
-    }),
+    flexPlugin(),
   );
 
   return finalPlugins;

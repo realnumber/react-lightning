@@ -1,4 +1,4 @@
-import type { Transform } from '@plextv/react-lightning-plugin-flexbox';
+import type { Transform } from '@plextv/react-lightning-plugin-flexbox-lite';
 import { convertRotationValue } from './convertRotationValue';
 
 function getValue(

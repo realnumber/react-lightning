@@ -43,7 +43,7 @@
     "@lightningjs/renderer": "2.13.2",
     "@plextv/react-lightning": "workspace:*",
     "@plextv/react-lightning-plugin-css-transform": "workspace:*",
-    "@plextv/react-lightning-plugin-flexbox": "workspace:*",
+    "@plextv/react-lightning-plugin-flexbox-lite": "workspace:*",
     "@repo/rollup-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/react": "18.3.14",
@@ -55,7 +55,7 @@
     "@lightningjs/renderer": "^2.5.1",
     "@plextv/react-lightning": "workspace:^",
     "@plextv/react-lightning-plugin-css-transform": "workspace:^",
-    "@plextv/react-lightning-plugin-flexbox": "workspace:^",
+    "@plextv/react-lightning-plugin-flexbox-lite": "workspace:^",
     "react": "^18.3.1",
     "react-native": "^0.76.1",
     "react-native-reanimated": "^3.16.1"
